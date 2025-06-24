@@ -1,0 +1,6 @@
+Name: RockwellAutomationLibraries
+Type: FolderType
+DisplayName: {"LocaleId":"en-US","Text":"Rockwell Automation Libraries"}
+Children:
+- File: ProcessLibrary_v5_20/ProcessLibrary_v5_20.yaml
+- File: CommonComponents/CommonComponents.yaml

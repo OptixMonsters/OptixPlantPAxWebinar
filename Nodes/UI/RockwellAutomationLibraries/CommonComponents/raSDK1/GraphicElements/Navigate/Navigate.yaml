@@ -1,0 +1,7 @@
+Name: Navigate
+Type: FolderType
+Children:
+- File: NavWithIcon/NavWithIcon.yaml
+- File: NavWithLabel/NavWithLabel.yaml
+- File: NavWithOverlay/NavWithOverlay.yaml
+- File: NavMethods/NavMethods.yaml

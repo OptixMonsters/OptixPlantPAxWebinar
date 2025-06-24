@@ -1,0 +1,1302 @@
+Name: GraphicSymbols
+Type: FolderType
+Children:
+- Name: raP_5_20_PAID_GS_BaseObj_Trend
+  Id: g=f3b53d4fe4bd690dc72baa92466a15fd
+  Supertype: raP_5_20_GraphicSymbolWithAlarmBase
+  ReferenceType: HasComponent
+  Children:
+  - Name: Nav_UsingTag
+    Type: raSDK1_NavUsingTag
+    Children:
+    - Name: Cfg_CloseCurrentDisplay
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: Cfg_DisplayType
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Faceplate"
+    - Name: Ref_Tag
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Tag}@Pointer"
+    - Name: raSDK1_NL_NavUsingTag
+      Type: NetLogic
+      Children:
+      - Class: Reference
+        Target: g=6e0263b05a933c9fc26daf0e50fd482e
+        Direction: Forward
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../raSDK1_NL_NavUsingTag@NodeId"
+          - Name: Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "NavTag"
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Inp_EnableNavigation"
+  - Name: Tag
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+  - Name: GraphicSymbolContents
+    Type: Panel
+    Children:
+    - Name: VerticalLayout1
+      Type: ColumnLayout
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -1.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -1.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: gods_Label
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Tag}/Label"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: TextHorizontalAlignment
+          Type: BaseVariableType
+          DataType: TextHorizontalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: TextVerticalAlignment
+          Type: BaseVariableType
+          DataType: TextVerticalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: Style
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "De-emphasized Text"
+        - Name: WordWrap
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+      - Name: ND_ValUnit
+        Type: raSDK1_ND_ValUnit
+        Children:
+        - Name: Cfg_Units
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":""}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Tag}/Val/EngineeringUnits/DisplayName"
+        - Name: Inp_Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Tag}/Val"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Set_DecimalPlaces
+          Type: BaseDataVariableType
+          DataType: Int32
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Tag}/Cfg_PVDecPlcs"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Cfg_DisplayAsPrimary
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Value
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: StringFormatter1
+              Type: StringFormatter
+              Children:
+              - Name: Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../Inp_Value"
+              - Name: Source1
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../Set_DecimalPlaces"
+          - Name: Style
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Live Data"
+            Children:
+            - Name: ExpressionEvaluator1
+              Type: ExpressionEvaluator
+              Children:
+              - Name: Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../Cfg_DisplayAsPrimary"
+        - Name: Units
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Cfg_Units"
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 2.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 2.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+      - Name: VerticalGap
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 4.0
+    - Name: msd_Exception
+      Type: MultiStateImage
+      Children:
+      - Name: StateValue
+        Type: BaseDataVariableType
+        DataType: Int32
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Tag}/Sts_eFault"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: States
+        Type: BaseObjectType
+        Children:
+        - Name: State0
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+        - Name: State1
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 16
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+        - Name: State2
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 19
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Sts_CommUncertain.svg"
+        - Name: State3
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 26
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+        - Name: State4
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 32
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Sts_CommBad.svg"
+        - Name: State5
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 34
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Sts_BC_BadCfg.svg"
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 18.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 18.0
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+  - Name: Inp_EnableNavigation
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Img_AlmInhibit
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=32;%PROJECTDIR%/res/Alm_Inhibit.svg"
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Tag}/Sts_eNotifyAll"
+        - Name: Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Tag}/Sts_AlmInh"
+  - Name: AlarmBorderWBlink
+    Type: raP_5_20_AlarmBorderWBlink
+    Children:
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#ffffff00"
+    - Name: Blink
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../Inp_eNotify.0"
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../Inp_eNotify"
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#000000"
+      Children:
+      - Name: raSDK_eNotifyAlarmColor1
+        Type: raSDK1_eNotifyAlarmColor
+        Children:
+        - Name: Source
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../Inp_eNotify"
+    - Name: Rotation
+      Type: BaseVariableType
+      DataType: Size
+    - Name: Inp_eNotify
+      Type: BaseDataVariableType
+      DataType: Int32
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Tag}/Sts_eNotifyAll"
+  - Name: msd_AlarmIcon
+    Type: raP_5_20_msd_AlarmIcon
+    Children:
+    - Name: Sts_eNotify
+      Type: BaseDataVariableType
+      DataType: Int16
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Tag}/Sts_eNotifyAll"
+    - Name: msd_Image
+      Type: MultiStateImage
+      Children:
+      - Name: StateValue
+        Type: BaseDataVariableType
+        DataType: Int32
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Sts_eNotify"
+      - Name: States
+        Type: BaseObjectType
+        Children:
+        - Name: OutOfAlarm
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+        - Name: OutOfAlarmUnacked
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 1
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alm_AckReqd.svg"
+        - Name: Low
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 2
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alarms_Icons_Low_Priority.svg"
+        - Name: Low_Unacked
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 3
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alarms_Icons_Low_Priority.svg"
+        - Name: Medium
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 4
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alarms_Icons_Medium_Priority.svg"
+        - Name: Medium_Unacked
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 5
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alarms_Icons_Medium_Priority.svg"
+        - Name: High
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 6
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alarms_Icons_High_Priority.svg"
+        - Name: High_Unacked
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 7
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alarms_Icons_High_Priority.svg"
+        - Name: Urgent
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 8
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alarms_Icons_Urgent_Priority.svg"
+        - Name: Urgent_Unacked
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 9
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alarms_Icons_Urgent_Priority.svg"
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../StateValue"
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../Sts_eNotify"
+  - Name: Cfg_ObjectVersion
+    Type: BaseDataVariableType
+    DataType: String
+    Description: {"LocaleId":"en-US","Text":"Object version"}
+    Value: "5.20.02 Release"
+- Name: raP_5_20_PAID_GS_BaseObj_Indicator
+  Id: g=004b474a3a9485377fa72a56e4606f9e
+  Supertype: raP_5_20_GraphicSymbolWithAlarmBase
+  ReferenceType: HasComponent
+  Children:
+  - Name: Nav_UsingTag
+    Type: raSDK1_NavUsingTag
+    Children:
+    - Name: Cfg_CloseCurrentDisplay
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: Cfg_DisplayType
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Faceplate"
+    - Name: Ref_Tag
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Tag}@Pointer"
+    - Name: raSDK1_NL_NavUsingTag
+      Type: NetLogic
+      Children:
+      - Class: Reference
+        Target: g=6e0263b05a933c9fc26daf0e50fd482e
+        Direction: Forward
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../raSDK1_NL_NavUsingTag@NodeId"
+          - Name: Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "NavTag"
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Inp_EnableNavigation"
+  - Name: Tag
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+  - Name: GraphicSymbolContents
+    Type: Panel
+    Children:
+    - Name: VerticalLayout1
+      Type: ColumnLayout
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -1.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        Value: -1.0
+      - Name: ND_ValUnit_Val
+        Type: raSDK1_ND_ValUnit_Stack
+        Children:
+        - Name: Value
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: StringFormatter1
+              Type: StringFormatter
+              Children:
+              - Name: Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../Inp_Value"
+              - Name: Source1
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../Set_DecimalPlaces"
+          - Name: Style
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Live Data"
+            Children:
+            - Name: ExpressionEvaluator1
+              Type: ExpressionEvaluator
+              Children:
+              - Name: Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../Cfg_DisplayAsPrimary"
+        - Name: Units
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Cfg_Units"
+        - Name: Cfg_Units
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"Units"}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Tag}/Val/EngineeringUnits/DisplayName"
+        - Name: Inp_Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Tag}/Val"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Set_DecimalPlaces
+          Type: BaseDataVariableType
+          DataType: Int32
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Tag}/Cfg_PVDecPlcs"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Cfg_DisplayAsPrimary
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 2.0
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 2.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 2.0
+        - Name: ContentAlignment
+          Type: BaseVariableType
+          DataType: ContentVerticalAlignment
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 2
+    - Name: msd_Exception
+      Type: MultiStateImage
+      Children:
+      - Name: StateValue
+        Type: BaseDataVariableType
+        DataType: Int32
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Tag}/Sts_eFault"
+      - Name: States
+        Type: BaseObjectType
+        Children:
+        - Name: State0
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+        - Name: State1
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 16
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+        - Name: State2
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 19
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Sts_CommUncertain.svg"
+        - Name: State3
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 26
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+        - Name: State4
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 32
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Sts_CommBad.svg"
+        - Name: State5
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 34
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Sts_BC_BadCfg.svg"
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 18.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 18.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+  - Name: Inp_EnableNavigation
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Img_AlmInhibit
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=32;%PROJECTDIR%/res/Alm_Inhibit.svg"
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Tag}/Sts_eNotifyAll"
+        - Name: Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Tag}/Sts_AlmInh"
+  - Name: AlarmBorderWBlink
+    Type: raP_5_20_AlarmBorderWBlink
+    Children:
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#ffffff00"
+    - Name: Blink
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../Inp_eNotify.0"
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../Inp_eNotify"
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#000000"
+      Children:
+      - Name: raSDK_eNotifyAlarmColor1
+        Type: raSDK1_eNotifyAlarmColor
+        Children:
+        - Name: Source
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../Inp_eNotify"
+    - Name: Rotation
+      Type: BaseVariableType
+      DataType: Size
+    - Name: Inp_eNotify
+      Type: BaseDataVariableType
+      DataType: Int32
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Tag}/Sts_eNotifyAll"
+  - Name: msd_AlarmIcon
+    Type: raP_5_20_msd_AlarmIcon
+    Children:
+    - Name: Sts_eNotify
+      Type: BaseDataVariableType
+      DataType: Int16
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Tag}/Sts_eNotifyAll"
+    - Name: msd_Image
+      Type: MultiStateImage
+      Children:
+      - Name: StateValue
+        Type: BaseDataVariableType
+        DataType: Int32
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Sts_eNotify"
+      - Name: States
+        Type: BaseObjectType
+        Children:
+        - Name: OutOfAlarm
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+        - Name: OutOfAlarmUnacked
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 1
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alm_AckReqd.svg"
+        - Name: Low
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 2
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alarms_Icons_Low_Priority.svg"
+        - Name: Low_Unacked
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 3
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alarms_Icons_Low_Priority.svg"
+        - Name: Medium
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 4
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alarms_Icons_Medium_Priority.svg"
+        - Name: Medium_Unacked
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 5
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alarms_Icons_Medium_Priority.svg"
+        - Name: High
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 6
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alarms_Icons_High_Priority.svg"
+        - Name: High_Unacked
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 7
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alarms_Icons_High_Priority.svg"
+        - Name: Urgent
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 8
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alarms_Icons_Urgent_Priority.svg"
+        - Name: Urgent_Unacked
+          Type: MultiStateImageState
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 9
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=32;%PROJECTDIR%/res/Alarms_Icons_Urgent_Priority.svg"
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../StateValue"
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../Sts_eNotify"
+  - Name: Cfg_ObjectVersion
+    Type: BaseDataVariableType
+    DataType: String
+    Description: {"LocaleId":"en-US","Text":"Object version"}
+    Value: "5.20.02 Release"

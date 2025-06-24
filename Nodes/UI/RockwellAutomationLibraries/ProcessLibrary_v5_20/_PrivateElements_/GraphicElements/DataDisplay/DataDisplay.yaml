@@ -1,0 +1,6 @@
+Name: DataDisplay
+Type: FolderType
+DisplayName: {"LocaleId":"en-US","Text":"Data Display"}
+Children:
+- File: Numeric/Numeric.yaml
+- File: String/String.yaml

@@ -1,0 +1,293 @@
+Name: Boolean
+Type: FolderType
+Children:
+- Name: raSDK1_BSD_Ind
+  Id: g=8e7cb8731f683f3959fb23e0a5105186
+  Supertype: Rectangle
+  Description: {"LocaleId":"en-US","Text":"Binary state display."}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 16.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 12.0
+  - Name: BorderThickness
+    Type: BaseDataVariableType
+    DataType: Size
+    Value: 1.0
+  - Name: CornerRadius
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 4.0
+  - Name: BorderColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#919191"
+    Children:
+    - Name: ConditionalConverter1
+      Type: ConditionalConverter
+      Children:
+      - Name: Condition
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Inp_Active"
+      - Name: TrueValue
+        Type: BaseDataVariableType
+        DataType: Color
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+      - Name: FalseValue
+        Type: BaseDataVariableType
+        DataType: Color
+        ReferenceType: HasParameter
+        Value: "#919191"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Cfg_InactiveBorderColor"
+  - Name: FillColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#2a4191"
+    Children:
+    - Name: ConditionalConverter1
+      Type: ConditionalConverter
+      Children:
+      - Name: Condition
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Inp_Active"
+      - Name: TrueValue
+        Type: BaseDataVariableType
+        DataType: Color
+        ReferenceType: HasParameter
+        Value: "#475ca7"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Cfg_ActiveFillColor"
+      - Name: FalseValue
+        Type: BaseDataVariableType
+        DataType: Color
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+  - Name: Inp_Active
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Description: {"LocaleId":"en-US","Text":"Indicator state. (0 = Inactive, 1 = Active)"}
+  - Name: Cfg_ActiveFillColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Description: {"LocaleId":"en-US","Text":"Fill color of binary state indicator when active."}
+    Value: "#2a4191"
+  - Name: Cfg_InactiveBorderColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Description: {"LocaleId":"en-US","Text":"Border color of binary state indicator when inactive."}
+    Value: "#919191"
+  - Name: Rotation
+    Type: BaseVariableType
+    DataType: Size
+  - Name: ns=21;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    ModellingRule: None
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 21
+      },
+      "Body": {
+       "libraryGuid": "fdcdf28fb1d75623841900955debf246",
+       "objectGuid": "73b91388b50f54a58024a1b36fab0475",
+       "objectVersion": 2,
+       "highestIgnoredVersion": 0
+      }
+     }
+- Name: raSDK1_BSD_IndLbl
+  Id: g=3cb70bc059c716ac023d838295b174c2
+  Supertype: RowLayout
+  Description: {"LocaleId":"en-US","Text":"Binary state display with label (right)."}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Indicator
+    Type: Rectangle
+    Children:
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#919191"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Inp_Active"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#919191"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Cfg_InactiveBorderColor"
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#2a4191"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Inp_Active"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#475ca7"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Cfg_ActiveFillColor"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      Value: 1.0
+    - Name: CornerRadius
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 4.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 16.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 12.0
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Rotation
+      Type: BaseVariableType
+      DataType: Size
+  - Name: Label
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Cfg_Label"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 4.0
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "Default"
+  - Name: Cfg_Label
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Description: {"LocaleId":"en-US","Text":"Text description of indicator."}
+    Value: {"LocaleId":"en-US","Text":"Label"}
+  - Name: Inp_Active
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Description: {"LocaleId":"en-US","Text":"Indicator state. (0 = Inactive, 1 = Active)"}
+  - Name: Enabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: Cfg_ActiveFillColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Description: {"LocaleId":"en-US","Text":"Fill color of binary state indicator when active."}
+    Value: "#2a4191"
+  - Name: Cfg_InactiveBorderColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Description: {"LocaleId":"en-US","Text":"Border color of binary state indicator when inactive."}
+    Value: "#919191"
+  - Name: ns=21;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    ModellingRule: None
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 21
+      },
+      "Body": {
+       "libraryGuid": "fdcdf28fb1d75623841900955debf246",
+       "objectGuid": "e2270e0880ed459b247d549a2aa95500",
+       "objectVersion": 3,
+       "highestIgnoredVersion": 0
+      }
+     }

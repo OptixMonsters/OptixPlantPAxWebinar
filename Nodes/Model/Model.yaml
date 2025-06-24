@@ -1,0 +1,23 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: raP_ProjectSettings
+  Type: BaseObjectType
+  Children:
+  - Name: HelpFilePath
+    Type: BaseDataVariableType
+    DataType: String
+    Description: {"LocaleId":"en-US","Text":"Path to the folder containing the help files"}
+    Value: "%PROJECTDIR%/res/Help"
+- Name: raSDK1_COB_Item
+  Id: g=fdec5fab13e83bc1a3f4c35bd581192c
+  Supertype: BaseObjectType
+  Description: {"LocaleId":"en-US","Text":"This SDK Object is used to add items to combo boxes"}
+  Children:
+  - Name: MyValue
+    Type: BaseDataVariableType
+    DataType: Int16
+  - Name: MyLabel
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"

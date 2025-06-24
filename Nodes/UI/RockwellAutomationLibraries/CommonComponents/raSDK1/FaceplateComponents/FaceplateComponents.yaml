@@ -1,0 +1,6 @@
+Name: FaceplateComponents
+Type: FolderType
+Children:
+- File: DialogBox/DialogBox.yaml
+- File: FaceplatePanel/FaceplatePanel.yaml
+- File: CustomContainers/CustomContainers.yaml

@@ -1,0 +1,7 @@
+Name: FaceplateComponents
+Type: FolderType
+DisplayName: {"LocaleId":"en-US","Text":"Faceplate Components"}
+Children:
+- File: DialogBox/DialogBox.yaml
+- File: Panels/Panels.yaml
+- File: CustomContainers/CustomContainers.yaml

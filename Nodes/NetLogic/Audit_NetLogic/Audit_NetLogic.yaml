@@ -1,0 +1,12 @@
+Name: Audit_NetLogic
+Type: FolderType
+Children:
+- Name: AuditSigningConfiguration
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: CreateAuditSigning

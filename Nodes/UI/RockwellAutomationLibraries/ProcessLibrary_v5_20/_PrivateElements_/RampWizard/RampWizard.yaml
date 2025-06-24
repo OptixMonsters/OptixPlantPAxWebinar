@@ -1,0 +1,6 @@
+Name: RampWizard
+Type: FolderType
+DisplayName: {"LocaleId":"en-US","Text":"Ramp Wizard Elements"}
+Children:
+- File: Widgets/Widgets.yaml
+- File: _PrivateElements_/_PrivateElements_.yaml

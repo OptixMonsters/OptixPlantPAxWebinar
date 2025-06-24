@@ -1,0 +1,9 @@
+Name: <PrivateElements>
+Type: FolderType
+Children:
+- File: AdvancedConfigurationElements/AdvancedConfigurationElements.yaml
+- File: Alarms/Alarms.yaml
+- File: FaceplateComponents/FaceplateComponents.yaml
+- File: GraphicElements/GraphicElements.yaml
+- File: GraphicSymbols/GraphicSymbols.yaml
+- File: RampWizard/RampWizard.yaml

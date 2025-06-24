@@ -1,0 +1,21 @@
+Name: Audit
+Type: FolderType
+Children:
+- File: SigningWorkflow/SigningWorkflow.yaml
+- File: AuditLogging/AuditLogging.yaml
+- Name: ns=21;LibraryReference
+  Type: ObjectLibraryReference
+  DataType: ObjectLibraryReferenceDataType
+  Value: 
+   {
+    "TypeId": {
+     "Id": 72,
+     "Namespace": 21
+    },
+    "Body": {
+     "libraryGuid": "c33cf91e8d46e61ec5e769849d0d7937",
+     "objectGuid": "9c24812bfe54c8e46bb9dd92c2f16265",
+     "objectVersion": 1,
+     "highestIgnoredVersion": 0
+    }
+   }

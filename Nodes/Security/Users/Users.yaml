@@ -1,0 +1,1685 @@
+Name: Users
+Id: g=740c906681f63b31508969ce3100078e
+Type: UsersCategoryFolder
+Children:
+- Name: Alberto operator supervisor
+  Id: g=44a98c415ab4e1199622964eefd73d39
+  Type: OperatingSupervisorType
+  Children:
+  - Name: Permissions
+    Id: g=66857e7a817c65b7d60266bd4a591990
+    Type: PermissionsType
+    Children:
+    - Name: AlarmAck
+      Id: g=84c132d00e46890cc3a5a635dccdc708
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: AlarmConfig
+      Id: g=0e87b24e0b9f8abfe913ea39fb34e5d6
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: AlarmDisable
+      Id: g=989de7d5eea747aaacee5d9b591b8605
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: AlarmShelve
+      Id: g=f1c46739d1090a6966c031be6f719b75
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: BypassFeedback
+      Id: g=e1bd08d3a2e84d6a1226c54d68cdb999
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: BypassInterlocks
+      Id: g=38039519620ad4dbbb485f09b8391518
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ConfigSecurity
+      Id: g=25f6adcfc7a8a07f2df3f1d4b1ab076f
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ControllerManagement
+      Id: g=f16112ea3f5c41c6232b0ddb83139dea
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigBehavior
+      Id: g=4436d0ee22e0d7790ea2f453c8433197
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigDiagnostics
+      Id: g=ee47bec29b40b71693e21df3926f9f47
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigFailTimers
+      Id: g=e87e97cdcf662f25e927e6e103f13a31
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigHMI
+      Id: g=9de198985cd324b03133558fb7fc7fb6
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigLimits
+      Id: g=0614ff69999ffcd59325a1a9c99f732a
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigThresholds
+      Id: g=43dd068f39a942b6740b9f4c8c0a1fff
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigTimers
+      Id: g=ddcdd22c7119608f9b6a0339aa122784
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigTuning
+      Id: g=c4bc660efcaf8b3063a603f7b7a33528
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: EnableSimulation
+      Id: g=081446fc22f9bf6ced42312f708ef0b1
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: EnterOperSettings
+      Id: g=230e764f0fa50934ff466a4dfc0ce507
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OperateEquipment
+      Id: g=39550328e2cff596c36a6b4ce6098960
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OperateGroupControl
+      Id: g=d3138c2d9b2fe99f4bb62ec659022347
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OverrideInputs
+      Id: g=6bb352276f727e1f568cee6df0a06427
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureAdvancedExceptions
+      Id: g=33930a61e03b0cd3143f5e8aa3cc2ba4
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureChangeSetpoints
+      Id: g=44222245be0d4e48a43d264772bb34a8
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureControl
+      Id: g=ccdddc6004913e50962534e83ec7ad4d
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureExceptions
+      Id: g=9ba9af8dff8a4069a7d0562e0254bcd4
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureForceSequence
+      Id: g=21a12338ca4f035943ac1d535e98c20f
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureManualControl
+      Id: g=bc2959dfc0cad8c37b74ef19dc4a8510
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ResetAccumulators
+      Id: g=e547049e725ee026f2fdb2f355daa9b8
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: RespondToPrompts
+      Id: g=acc9d3c9ea492e34845de59c19da30cd
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ShowFaceplate
+      Id: g=438b3aa2af1e2645bdfa331a551289db
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: CmdSrcMaint
+      Id: g=11eefd18a85ae3c592275b6779b517cb
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: CmdSrcOperProg
+      Id: g=79ce699c30cdac27e9cf3b4e54840500
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: CmdSrcOutOfService
+      Id: g=03413f5d4e0931f905d92b5e45fde8d6
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: OverrideOutputs
+      Id: g=183cc2b9c7e857e0c6fed83c75b4d839
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureChangeParameters
+      Id: g=708f4dba6f91de822ca065eb45e24110
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureEquipmentControl
+      Id: g=b635b0652dfe7ba71ab16800645405f1
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ConfigTrend
+      Id: g=db7d23c6ba7fb6709cd0c70b00c10ac1
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+  - Name: MeasurementSystem
+    Id: g=57a347436d8c0b5234bd0d2e260cf7b7
+    Type: BaseVariableType
+    DataType: MeasurementSystem
+    ReferenceType: HasProperty
+    Value: 2
+  - Class: Reference
+    Type: HasGroup
+    Target: g=2bfa5791f9fe62f0ab1b58c1e24845b5
+  - Class: Reference
+    Type: HasGroup
+    Target: g=5b70f296638671a2639dbe6e68f7ce30
+  - Class: Reference
+    Type: HasGroup
+    Target: g=12f780d7f92df4eee5cc057f29c22880
+- Name: Dave engineer
+  Id: g=59405641c74511428fc071ba578f994d
+  Type: EngineerType
+  Children:
+  - Name: Permissions
+    Id: g=688f94e6ea2aab3ce71e58a5654f4cdf
+    Type: PermissionsType
+    Children:
+    - Name: AlarmAck
+      Id: g=dc4ea51214de058f3cbc60b311438bc3
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: AlarmConfig
+      Id: g=d9761e17c2c3f7f392277548d58c6ca8
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: AlarmDisable
+      Id: g=ac149e43c153014724949807c6a7dc52
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: AlarmShelve
+      Id: g=b747f78541fbcba41a028007c3f0df4b
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: BypassFeedback
+      Id: g=c7c0f404494dfb7cdfabbd1ac09e9786
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: BypassInterlocks
+      Id: g=9134cfecaeb00341131afc9c9d6959d5
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ConfigSecurity
+      Id: g=427a5b68e12664c3243da2f12055b2e1
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ControllerManagement
+      Id: g=a90eab1f81c2751aff8c91f4e68a01bc
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigBehavior
+      Id: g=769c53c5ce2cc59aa3471b0197a70d46
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigDiagnostics
+      Id: g=51d8a4bcc9c9c76ad6be368577d561f4
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigFailTimers
+      Id: g=734f24273b295a9efa076b7df262ee30
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigHMI
+      Id: g=7ddde99c78401d90a98e8873c4840ba1
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigLimits
+      Id: g=6a7e9f7fcb1596cc0f4fe64472406dfe
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigThresholds
+      Id: g=c5b9bb4445fd79634fd0c9cd77c7591c
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigTimers
+      Id: g=dcdc296d9d3376b551bb78126c5c0400
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigTuning
+      Id: g=b09a0ddc54a0ddda9688c16904697280
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: EnableSimulation
+      Id: g=967b0223d7847d78ff6c363bec70351a
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: EnterOperSettings
+      Id: g=4eb04ca8b84d136f5816a84b20be5654
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OperateEquipment
+      Id: g=1830fa0cb92e623c63290a1b435f64cb
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OperateGroupControl
+      Id: g=58aa66f5dfa425aafa88d3836e46344d
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OverrideInputs
+      Id: g=378fb8e70dbb4cdeb6bc13dcccbc1cd3
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureAdvancedExceptions
+      Id: g=6f517fb6c76105ef1864f1aea4f1e7e0
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureChangeSetpoints
+      Id: g=7bc6395ddf488cc400dbbd9f41413a17
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureControl
+      Id: g=2d0ab375dfdb8e076da4a2e818d93410
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureExceptions
+      Id: g=d66dcce86450c0ad46567e83462e24b6
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureForceSequence
+      Id: g=d6d928e07a9a1d2f603d831408e26fa6
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureManualControl
+      Id: g=5ada96d7623d4f5f34b34d3cdac431a2
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ResetAccumulators
+      Id: g=8bb4979eaadd55b0a694a6bf70a19d2e
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: RespondToPrompts
+      Id: g=4d4e5888b4836b106b24b0a3c73dcdc2
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ShowFaceplate
+      Id: g=07ce5fd4d3d453eb19149951bb4bb4e1
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: CmdSrcMaint
+      Id: g=7c894df3b54aeb6058dd49e231f55a02
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: CmdSrcOperProg
+      Id: g=edad1f861d2630f2095a4e90a744cb81
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: CmdSrcOutOfService
+      Id: g=63fc007316db8e63919de1ed6b7389e8
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OverrideOutputs
+      Id: g=3ab207e3cea046af6d4f1ad676cffc21
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureChangeParameters
+      Id: g=2a9b57efacf2a39bd42d0b83dc129167
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureEquipmentControl
+      Id: g=2d9ffc6a8c246d5db19986f80417f3bb
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ConfigTrend
+      Id: g=9004f7c6f96b461126670276807c2c2b
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+  - Class: Reference
+    Type: HasGroup
+    Target: g=ce1c5785a0e8dd3bb915986062f9f3a9
+  - Class: Reference
+    Type: HasGroup
+    Target: g=05ff49c176c1e30eb76c7f22f17ec5c2
+  - Class: Reference
+    Type: HasGroup
+    Target: g=2bfa5791f9fe62f0ab1b58c1e24845b5
+- Name: Dale engineer
+  Id: g=5da9139f813b521e0d1c7d22d822c79a
+  Type: EngineerType
+  Children:
+  - Name: Permissions
+    Id: g=43f410d2e4b5473f3cc875ac63204894
+    Type: PermissionsType
+    Children:
+    - Name: AlarmAck
+      Id: g=a29c20c11dd7ea35d9b233e48be0a7e2
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: AlarmConfig
+      Id: g=58eff90cfc7c1d9e19df52dd2f87f50c
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: AlarmDisable
+      Id: g=53e32eb3dd084ff72cab2f36822b69af
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: AlarmShelve
+      Id: g=b1d5ebeb0c0616d85499707ea27607b7
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: BypassFeedback
+      Id: g=99706e00e45781304d6d34265117e990
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: BypassInterlocks
+      Id: g=727c482656c9098ae9a3edcc77fd5c96
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ConfigSecurity
+      Id: g=64d0de400895b72cef96265b8211410e
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ControllerManagement
+      Id: g=6d05e45699275aaf59c77b1a5ef35fcf
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigBehavior
+      Id: g=2da4bcfe22e44436502012907baf30a1
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigDiagnostics
+      Id: g=6023f4cf9bff448056f00ae7935676ab
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigFailTimers
+      Id: g=53722f13c8595ecbdfc6603bbfef3cea
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigHMI
+      Id: g=77c76fd8709b3eaae01e3f7f6062027d
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigLimits
+      Id: g=e4a90d9f33b5f231f550d294fc565637
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigThresholds
+      Id: g=1c379890cf8d3fb094da2ee31a6f11b5
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigTimers
+      Id: g=396fbe9f07fabdf9015e28b43cdb120a
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigTuning
+      Id: g=deea79d240a195580e01a49b4c3d41f7
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: EnableSimulation
+      Id: g=919e2a88045ecb07fbb7c0e3d656e764
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: EnterOperSettings
+      Id: g=cc42639d41cd25cfb7e21ec13f473220
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OperateEquipment
+      Id: g=fbf9857042367d6a1aa3e07a12c9d32b
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OperateGroupControl
+      Id: g=00cd0bb1c5faaa04f723ba0a6dcf5397
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OverrideInputs
+      Id: g=60677e73835347a5bec2c8c1a66a72f3
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureAdvancedExceptions
+      Id: g=634963bf4f8856649c34694d0a6a5c88
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureChangeSetpoints
+      Id: g=9a3e3af536e81bc70fb6ffab5b5cb329
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureControl
+      Id: g=62915fca34faf2dffc30c11dc218740c
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureExceptions
+      Id: g=044cb4a60c84fcd4162a2e01f073e9de
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureForceSequence
+      Id: g=ed11eacaab2befe172aa333252e9d531
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureManualControl
+      Id: g=794c8e3d57c4c48dc40c66bcc33ea3fd
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ResetAccumulators
+      Id: g=1ffa0b867f1abe1b4745816f96cd97a1
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: RespondToPrompts
+      Id: g=2c8c51745dbbd3a51f329caaa3a36954
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ShowFaceplate
+      Id: g=76556faef18eb3dbafaa28e02e805ba3
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: CmdSrcMaint
+      Id: g=645fb20d809f59e6bda698f203d2fd32
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: CmdSrcOperProg
+      Id: g=d268173579aae8a71a8594be34ff0da6
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: CmdSrcOutOfService
+      Id: g=7a42e72f1cf611f438200141874fee28
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OverrideOutputs
+      Id: g=bff47ae0707d55c1d2baad4d2fe26c35
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureChangeParameters
+      Id: g=7f74a1b38d16b10fae259ee1d69ceb1d
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureEquipmentControl
+      Id: g=038641e30ae58d8e6b8f27cbc6685582
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ConfigTrend
+      Id: g=63dc1ee03fb5a5f483b533a2a5800bc3
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+  - Class: Reference
+    Type: HasGroup
+    Target: g=2bfa5791f9fe62f0ab1b58c1e24845b5
+  - Class: Reference
+    Type: HasGroup
+    Target: g=05ff49c176c1e30eb76c7f22f17ec5c2
+  - Class: Reference
+    Type: HasGroup
+    Target: g=5b70f296638671a2639dbe6e68f7ce30
+- Name: Janet operator
+  Id: g=bbc6a25fc4d1a61e166837fdc53b0124
+  Type: OperatorType
+  Children:
+  - Name: Permissions
+    Id: g=9b6799f27dbc4bd6351b11cb17fdd1ca
+    Type: PermissionsType
+    Children:
+    - Name: AlarmAck
+      Id: g=62a4e11f68a8d1caca64db964eb1855d
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: AlarmConfig
+      Id: g=21a5d5c5ae908c8f1d6fc537ca4482d1
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: AlarmDisable
+      Id: g=dea89473d46e483c56be501f6b5db7cf
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: AlarmShelve
+      Id: g=7874472eb5f5b209a00dcaef93899416
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: BypassFeedback
+      Id: g=4f2d4e35f372a23c303c2be5144c0fb5
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: BypassInterlocks
+      Id: g=d954d6e177f3df6cd1be8f32cb859e5b
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ConfigSecurity
+      Id: g=937db2ca94b2d230d0bea6a5a7331db6
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ControllerManagement
+      Id: g=e0e7ba046fd96db136fe68e866fdd2a2
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigBehavior
+      Id: g=310c334822566ee8105c38be2051b6fa
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigDiagnostics
+      Id: g=9a1e1faf5db81e64f5265df64839d8ed
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigFailTimers
+      Id: g=7bc254992a038479a068ddf97e4d3f6e
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigHMI
+      Id: g=82020c10601e54e26533cb0ecdd75cf7
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigLimits
+      Id: g=900f1bce0a54fb4768aa45062a52b7fb
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigThresholds
+      Id: g=ad8df2541be8c53a6b4006cbe17be990
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigTimers
+      Id: g=2dbeb9c23f4e3284fb568d87261043ea
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigTuning
+      Id: g=c0d040dacf23afecfd9111446b538c69
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: EnableSimulation
+      Id: g=c8f6a036d9b1007d0f6121f01927e6a0
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: EnterOperSettings
+      Id: g=a67c978428a61d9a75994afc9acad1e7
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OperateEquipment
+      Id: g=01a70bc2616640dd636f3eb370ca5692
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OperateGroupControl
+      Id: g=759d9f6ce16c224e37fa72df4373c77e
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OverrideInputs
+      Id: g=36a68e5c70649a97bcd68431534b979f
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureAdvancedExceptions
+      Id: g=484ebeba3d8e3f287ff934ba4a65c829
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureChangeSetpoints
+      Id: g=b6fe782ab36b6ccec9fbe5eae02acfe9
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureControl
+      Id: g=1cea66aafa9b10d31529b3ea58638752
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureExceptions
+      Id: g=be8f2346c06f3efc5142af4e0acf7a0f
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureForceSequence
+      Id: g=797c84c56d88514e6b68f3b48b39cb1c
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureManualControl
+      Id: g=ea4bc4953bf3081dc5698c787811a8db
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ResetAccumulators
+      Id: g=3b59e5a699d927058706b95a8eb82b92
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: RespondToPrompts
+      Id: g=7cf87cb7af479ff6041538364fbc3664
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ShowFaceplate
+      Id: g=51101a55eab9dc85745d1f4a3986b1b6
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: CmdSrcMaint
+      Id: g=c033ae993385170c5484f1a97bc4d9e3
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: CmdSrcOperProg
+      Id: g=97eb23befc4f67d85b1b38e63e33dde3
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: CmdSrcOutOfService
+      Id: g=1c8de22d67b5abb3ecb1f10502cf75ae
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: OverrideOutputs
+      Id: g=f900aa717fd9f08c855cd78866a6526f
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureChangeParameters
+      Id: g=ab6893ca88e29055439f93fe8e850191
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureEquipmentControl
+      Id: g=a1989bb79095c9bf2f1714060abcf20b
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ConfigTrend
+      Id: g=aea448be29f469cd351145f4a8109d06
+      Type: BaseDataVariableType
+      DataType: Boolean
+  - Class: Reference
+    Type: HasGroup
+    Target: g=5b70f296638671a2639dbe6e68f7ce30
+- Name: LJ maintenance
+  Id: g=ba1780587e4c7354f18d0962b65b105c
+  Type: MaintenanceType
+  Children:
+  - Name: Permissions
+    Id: g=43978ec7e2edb5ae3396f7a38d00dde6
+    Type: PermissionsType
+    Children:
+    - Name: AlarmAck
+      Id: g=4411d4eda274289c87c3beed6b9ef4f0
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: AlarmConfig
+      Id: g=462bf2e713219958738240c6598f9c09
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: AlarmDisable
+      Id: g=24f97af5a5b3ed2118e650b2f5d60ae4
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: AlarmShelve
+      Id: g=582dabcabe98c499d27590e6d67f5d05
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: BypassFeedback
+      Id: g=b522521da1f8d694e87ec24ac2bbb86a
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: BypassInterlocks
+      Id: g=1395d9d80f34d90d18c06cb054fda3e8
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ConfigSecurity
+      Id: g=b8839288b125da684b42bbfda0f75ea8
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ControllerManagement
+      Id: g=d473de583a7a12a21ce9ddb2c02554b5
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigBehavior
+      Id: g=41681b77990a97c22d9a2b9556e266c8
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigDiagnostics
+      Id: g=fa95aae9d18a6733eb2b6f03def5324b
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigFailTimers
+      Id: g=c3d4623e8dc17b3ed65d311bbbce683f
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigHMI
+      Id: g=bcb2107c1b0382e18d04d2451e72ada8
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigLimits
+      Id: g=80eb8b023306e7d195496e856d3f32b2
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigThresholds
+      Id: g=58042261f25a569a809288cbb665c4a8
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigTimers
+      Id: g=d8e5975894c217c980ca694b4bab05fe
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigTuning
+      Id: g=3636d87ab848f7a5168e3d0c9df4b284
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: EnableSimulation
+      Id: g=1f1cde0f9aefa58cea29fae002cee0cd
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: EnterOperSettings
+      Id: g=deed7c9219a4a2e7cc099b2513cd684d
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OperateEquipment
+      Id: g=595c0853c69e4d09f7292180c80af776
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OperateGroupControl
+      Id: g=b9a9cf5eb3f31b227fad43cd32b188f1
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OverrideInputs
+      Id: g=8c4a9b648f871dbbb95c20a42fc6f803
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureAdvancedExceptions
+      Id: g=94b4f124ec331d148b981e2d11756df0
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureChangeSetpoints
+      Id: g=d8c8893d32448f1635173b4b4ff6035e
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureControl
+      Id: g=7d809e0cb5d1698893a5631db82e08cd
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureExceptions
+      Id: g=b428c809a85424e39a5515c9addfe705
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureForceSequence
+      Id: g=8951f96940e77d8e09b4c0fea6af8caf
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureManualControl
+      Id: g=82f5bc5d7d328da0274431a42e10df08
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ResetAccumulators
+      Id: g=368633c78d278078ed3e441cf968b12c
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: RespondToPrompts
+      Id: g=bdc2787cc78c645988a4d6a47d2be5de
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ShowFaceplate
+      Id: g=0e0d35c47a9eab6a08470601c9686067
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: CmdSrcMaint
+      Id: g=fba9785219cc127a67a5e6fdcf816e0c
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: CmdSrcOperProg
+      Id: g=512a77e3d7226d9c7cac2bebd26136cb
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: CmdSrcOutOfService
+      Id: g=805fa41ba2ef4b1c88a5ac58649f40ec
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OverrideOutputs
+      Id: g=5ac32eaf0ce2057d7df436ae192cd8a0
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureChangeParameters
+      Id: g=0092c930ca125caeae9fc3bbf100603c
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureEquipmentControl
+      Id: g=214c8fa1bd0b91bd0d9fcec0fa2c6e5b
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ConfigTrend
+      Id: g=b2599f47e9fd27201aeb0087cb0e7a2f
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+  - Class: Reference
+    Type: HasGroup
+    Target: g=5b70f296638671a2639dbe6e68f7ce30
+- Name: Martha IT
+  Id: g=7dc14018718b0d03966f7ff97694aafc
+  Type: AdministratorType
+  Children:
+  - Name: Permissions
+    Id: g=7b0c7279cdb61452d076a4cc2ba12c5b
+    Type: PermissionsType
+    Children:
+    - Name: AlarmAck
+      Id: g=79c315d221c0fba91a82b7ee1709137b
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: AlarmConfig
+      Id: g=8ba782d75a882e85550bf59640c6a372
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: AlarmDisable
+      Id: g=425db500e0d8945136da85625f2578dc
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: AlarmShelve
+      Id: g=1fd8a9217b56f28c43eaabda1c00be5c
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: BypassFeedback
+      Id: g=3d3808995f427330a9213dbe13b05d69
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: BypassInterlocks
+      Id: g=3d9f9006757774e7b8e954506c7f9251
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ConfigSecurity
+      Id: g=af61e4bb77482bc07a2ab08269a226a5
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ControllerManagement
+      Id: g=69f65c9f71938b4b3b6b2d0d5325c605
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigBehavior
+      Id: g=99424b9977ad5dcb4c05e48c5c571d15
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigDiagnostics
+      Id: g=f5c2a7cdc0260614c654d8520a8963d7
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigFailTimers
+      Id: g=fc6b2a62afcc080d375929c9775175c4
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigHMI
+      Id: g=e970fad3002412874ce5d64fe07a288c
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigLimits
+      Id: g=e4a0d4a1b8201cef87a8258a4cef3e8b
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigThresholds
+      Id: g=b9a5602bfc47c88df49721f80d1924a2
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigTimers
+      Id: g=4012721884a0ce5f195258e930c99154
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigTuning
+      Id: g=d069ce4298b530dd8952ad5a88a5ebef
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: EnableSimulation
+      Id: g=e7a91f30991c54f7c0f28952f2b2b6ad
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: EnterOperSettings
+      Id: g=fd1ca99bfba135f0d83a0c6b57ab3177
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: OperateEquipment
+      Id: g=b2601fac37c3cf3c322da930b96da69c
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: OperateGroupControl
+      Id: g=0e60bd416d8a0bb2d4facd8cf6561952
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: OverrideInputs
+      Id: g=5f47d2ae329e115613e823672b62973a
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureAdvancedExceptions
+      Id: g=a275b65352846f4e3ab9c2ddb8a6558f
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureChangeSetpoints
+      Id: g=41bb512db0f190b718c610c568483c0a
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureControl
+      Id: g=c0278312a3463a73f4d0e6be44665cc4
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureExceptions
+      Id: g=33d55c9906d4d6837a823ab764150692
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureForceSequence
+      Id: g=601ac2126363c0494cc6a2e3ccaa7ba0
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureManualControl
+      Id: g=cb6ec01adf89d6757d165d3f97f6e656
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ResetAccumulators
+      Id: g=080e07e67528bbea8566643935a6acb4
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: RespondToPrompts
+      Id: g=4f3f123f71d004d1ae828977e8f002b6
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ShowFaceplate
+      Id: g=c618ff276c5444186be597f925be4110
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: CmdSrcMaint
+      Id: g=8fd555fd667cbb3cbd004e7f195efc62
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: CmdSrcOperProg
+      Id: g=664ba13af09c825cea68abf79673f19f
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: CmdSrcOutOfService
+      Id: g=b4b347d58004b1dc08ff8cfd76a92723
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: OverrideOutputs
+      Id: g=b22075166e40efcd8c19b83d54e31d8b
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureChangeParameters
+      Id: g=a51054ee00d83235e27936218750fea7
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureEquipmentControl
+      Id: g=d0e8f0304ffd347b09ef804cb7d224ce
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ConfigTrend
+      Id: g=cacff798c7d8d9f451744481416713f0
+      Type: BaseDataVariableType
+      DataType: Boolean
+  - Name: MeasurementSystem
+    Id: g=0effc2a7f1e91a098a45462337ead801
+    Type: BaseVariableType
+    DataType: MeasurementSystem
+    ReferenceType: HasProperty
+    Value: 2
+  - Class: Reference
+    Type: HasGroup
+    Target: g=5b70f296638671a2639dbe6e68f7ce30
+- Name: Tonya maintenance supervisor
+  Id: g=5c337b71b8daaaf4437e684cfea859dc
+  Type: MaintenanceSupervisorType
+  Children:
+  - Name: Permissions
+    Id: g=0a605cf9cad896e7158aeeb7772602da
+    Type: PermissionsType
+    Children:
+    - Name: AlarmAck
+      Id: g=e3964f2ec650dec964a2229989933bba
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: AlarmConfig
+      Id: g=167a0206bb5e2546252a46e0109c1a91
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: AlarmDisable
+      Id: g=06eb90c58af46cd1de0b832d0beabb69
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: AlarmShelve
+      Id: g=d6ea2ee0e2f3972fa6e4fe81b4d33181
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: BypassFeedback
+      Id: g=d21e0325a0ae5f24e60cfbc8ee6f4813
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: BypassInterlocks
+      Id: g=55eed722be624bf9301c560fee491cbb
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ConfigSecurity
+      Id: g=6abaffc61f4e8b75f481ce2137d8d321
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ControllerManagement
+      Id: g=c5b67c6f26760705a5f84c2866228559
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigBehavior
+      Id: g=719ff5ade61cab91229c7e678e030f29
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigDiagnostics
+      Id: g=26dae18b478d59fca01278b31d71c7fb
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigFailTimers
+      Id: g=11166ed8ebaa6fe4c3d39a057461525c
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigHMI
+      Id: g=dc0b5ff78f9d948734cf55496cd6702e
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigLimits
+      Id: g=6debf5d95e17181a8dcd8cb5bdcd5e56
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigThresholds
+      Id: g=5ce94d1c4dce0f29a6d97e3b2988a8cd
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigTimers
+      Id: g=b7e40dddaaa3016a50c418b6e4c9c806
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigTuning
+      Id: g=5bbed3e385aa91873a33243fdd1e6962
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: EnableSimulation
+      Id: g=e331b20b6f8300ec1b2ce8e7a63bd1be
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: EnterOperSettings
+      Id: g=b42441cee3ef2a995df2a1ba25bafc92
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OperateEquipment
+      Id: g=a25656b349d4184386a856f8406528ef
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OperateGroupControl
+      Id: g=45dbbad8b83ea269288bc3a95ce41dd6
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OverrideInputs
+      Id: g=7bbbbde0c11c77a7d8030c9c446a00ce
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureAdvancedExceptions
+      Id: g=246f272aaced2f35269d8c09529207ea
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureChangeSetpoints
+      Id: g=241c553e6e2a7176277ea03575f321ad
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureControl
+      Id: g=d5a5fdafb27a2450be3e9481938d4c74
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureExceptions
+      Id: g=dd487bfa36205c2f216c58d14a2cf124
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureForceSequence
+      Id: g=3e22bdfeee924eb31a2d8c230d629989
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureManualControl
+      Id: g=3c9770d6d2bf6a46a9060aa2e64d1628
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ResetAccumulators
+      Id: g=5a165173fa5e1e4c19f37ea6d499f29c
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: RespondToPrompts
+      Id: g=3c64c14a9aa6fd00281c5b720620c6df
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ShowFaceplate
+      Id: g=9aeddc64636d4e0cfc5c664d6585a7ca
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: CmdSrcMaint
+      Id: g=25172072b83960dfc696a98f2dd8c255
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: CmdSrcOperProg
+      Id: g=05fc58cb6a345364a267a7ed9fe1cd53
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: CmdSrcOutOfService
+      Id: g=6c01caff985b40bf51cb8d3ddafe9196
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OverrideOutputs
+      Id: g=41561237267caca395be01b96b1a941b
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureChangeParameters
+      Id: g=2959d123b1adcdc8864abd8af49fdfc4
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureEquipmentControl
+      Id: g=61d0980b04a7bd399f509d8f2fd68e7c
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ConfigTrend
+      Id: g=f7d6604f7ac7ac4e764420e71441633e
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+  - Class: Reference
+    Type: HasGroup
+    Target: g=ce1c5785a0e8dd3bb915986062f9f3a9
+- Name: Will engineer
+  Id: g=497fdbe79c02bb2dfa8b1a245676d0e2
+  Type: EngineerType
+  Children:
+  - Name: Permissions
+    Id: g=ce0d5d664476caa6af56655ebbb016a3
+    Type: PermissionsType
+    Children:
+    - Name: AlarmAck
+      Id: g=b06a246828c62e310a9c4cb8ff680e07
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: AlarmConfig
+      Id: g=94313ffb32a5755c9b0185ce06c85658
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: AlarmDisable
+      Id: g=641253328e0814216a13277fc6574275
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: AlarmShelve
+      Id: g=4873967073318f9800bd77dee5ac58c4
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: BypassFeedback
+      Id: g=935de27ed59a5c2681ebd227e38d194e
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: BypassInterlocks
+      Id: g=2b6749ab79117e39b90fd9d222427b3b
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ConfigSecurity
+      Id: g=cf8d4d250df4003c9787e71825261678
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ControllerManagement
+      Id: g=fa0b9b20ec49c27237109c8a28133539
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigBehavior
+      Id: g=a875be024121e0a8792bd23cfa6d262a
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigDiagnostics
+      Id: g=170aff98cc531e8150af273260f82671
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigFailTimers
+      Id: g=a15ddb59b89d0bf6fb9182be7b26715a
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigHMI
+      Id: g=1006394feb2781d4cfdeb1de14ef5ea5
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigLimits
+      Id: g=bb9fdb4304dcb3f09d464e6f3061b612
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigThresholds
+      Id: g=54281080b7dad05201e85ae8b84c8159
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigTimers
+      Id: g=8bfcc7c3effd6738f5187fbe21eb6579
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: DeviceConfigTuning
+      Id: g=84d0646fd1912029dae3fe265f6530ad
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: EnableSimulation
+      Id: g=d1fb3e001e212fa4217fed2314d2153f
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: EnterOperSettings
+      Id: g=f0d22b4b79c5aef7f7015ad29ef8625e
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OperateEquipment
+      Id: g=fbd00e7d7d5473d04abb1605b1c0f61f
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OperateGroupControl
+      Id: g=8752c11a55c2c0f58c08358627f42777
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OverrideInputs
+      Id: g=3d2076c5d262752f1df541a49d17acd5
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureAdvancedExceptions
+      Id: g=a9a10522508f4827e2cfc09ae1de0933
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureChangeSetpoints
+      Id: g=44c86c8ccc4affd20067c205002b082d
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureControl
+      Id: g=3f104cba578193d3cd510ccc32497276
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureExceptions
+      Id: g=01b38388ee84847715b12a81772d7c61
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureForceSequence
+      Id: g=0a7394da6b12f881fe7a7af64d32039c
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureManualControl
+      Id: g=3339808fae008e2559f30c4e0d2e84d7
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ResetAccumulators
+      Id: g=147d7fbe29a045a90038e1b209afbee2
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: RespondToPrompts
+      Id: g=a611af49a10e3c284afb703de8ad194e
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ShowFaceplate
+      Id: g=6dd030659a615e8652a76347344b6f86
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: CmdSrcMaint
+      Id: g=4459151fa0bfcc9909cf2aa2bd64bef7
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: CmdSrcOperProg
+      Id: g=3a942d623ce5c77e1cbc6f5e596c0817
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: CmdSrcOutOfService
+      Id: g=6d2bea7e8eae328edc2f82821f8d44ed
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: OverrideOutputs
+      Id: g=be0da5e66b67d241414f4f5b7897cd94
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureChangeParameters
+      Id: g=f1b721f900ceb9b0f836f10a1dec4a44
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ProcedureEquipmentControl
+      Id: g=c197e28458897ffc25799d2ba608ebf8
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: ConfigTrend
+      Id: g=2a4f15fabc89bd30f4031b2e33e5352b
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+  - Class: Reference
+    Type: HasGroup
+    Target: g=ce1c5785a0e8dd3bb915986062f9f3a9
+  - Class: Reference
+    Type: HasGroup
+    Target: g=12f780d7f92df4eee5cc057f29c22880
+- Name: Default
+  Id: g=c31bdfdf35ab4add7f8f88279889a1ad
+  Type: UserType
+  Children:
+  - Name: LocaleId
+    Id: g=a4b5333f2a211202fef9b471d801a5b4
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "en-US"
+  - Name: Language
+    Id: g=eae5ecbf42cb9bff86d13c6fedd36de6
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "en-US"
+  - Name: MeasurementSystem
+    Id: g=f59923f4f95b6313ac6f01725b074d04
+    Type: BaseVariableType
+    DataType: MeasurementSystem
+    ReferenceType: HasProperty
+    Value: 2
+  - Class: Reference
+    Type: HasGroup
+    Target: g=f5aff9d4f2fa561421a672dcdc8688b0
+  - Name: Permissions
+    Id: g=d6c1de1395570278b2d7f1e1cd18f7df
+    Type: PermissionsType
+    Children:
+    - Name: AlarmAck
+      Id: g=a8f4a869c7246b653c51817d8eecdc0b
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: AlarmConfig
+      Id: g=c56ad1aa6eabc39f2ec8c2e567cbc7af
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: AlarmDisable
+      Id: g=ee029b69cf739cecd3321871e4cb9d21
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: AlarmShelve
+      Id: g=62b7b4a304dc69e72cf54e56957acb16
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: BypassFeedback
+      Id: g=284dffad5812968396c2551b141b897b
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: BypassInterlocks
+      Id: g=20565eeb4d8c22d8aecc264b24ab6a5d
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ConfigSecurity
+      Id: g=0e9d676db7f03e94cb2443b274919545
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ControllerManagement
+      Id: g=1f9a94d8005ff30f69b68995f4535e1a
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigBehavior
+      Id: g=6e5fc7e2400a75cb34dc5890414ba825
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigDiagnostics
+      Id: g=62a40e264c0d115d44e72317ba1453d0
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigFailTimers
+      Id: g=51da0e4863a18bcbb1fae7d89313e624
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigHMI
+      Id: g=df88c8fbe52e4a46b28411a59a5d0932
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigLimits
+      Id: g=23f7ea009ceffa731ffabfc363bd5710
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigThresholds
+      Id: g=e191a751999fa3151a387f60202b8cf6
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigTimers
+      Id: g=e167556f5964f3134676f733d5fc0649
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: DeviceConfigTuning
+      Id: g=f341499cfa703b0cee8c05070479ecae
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: EnableSimulation
+      Id: g=b5ae0b5f6bbd123433313d8eb72b45c5
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: EnterOperSettings
+      Id: g=c316a892170b68e6ded3448a45c2bc44
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: OperateEquipment
+      Id: g=c1e4c1e526db536933164613046af9c0
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: OperateGroupControl
+      Id: g=510e2c52fed4c7b92de432db79dd2504
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: OverrideInputs
+      Id: g=62b2f7d9401593f3929ffeb847b5bdc0
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureAdvancedExceptions
+      Id: g=12c5a94006968222b6f914683a41d07c
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureChangeSetpoints
+      Id: g=33f245e435819e2998dc888f2ee8e819
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureControl
+      Id: g=a65ff2e52b50c43d026d7639f0b69cbd
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureExceptions
+      Id: g=c369e51e79e9b8272829bc1e5e5dcd61
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureForceSequence
+      Id: g=3333a3a4b65f0b88b59add6fc0304212
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureManualControl
+      Id: g=158b328e8606082994511755a11b2567
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ResetAccumulators
+      Id: g=c85d80a5dd87f2542474a02efd81b612
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: RespondToPrompts
+      Id: g=1ab0f1c057e0190e50b281832ca8b922
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ShowFaceplate
+      Id: g=f698d1b530051a47bc5ae54c16213297
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: CmdSrcMaint
+      Id: g=3d40b30d835ca118d3d5ea5d4e0305e1
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: CmdSrcOperProg
+      Id: g=d8e99ea0a7a1cfb8f685cfd7efdc4ad4
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: CmdSrcOutOfService
+      Id: g=628e79faa8c07c4881c27b76612ca79d
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: OverrideOutputs
+      Id: g=642ccdaa61d8d83271f7d3b95ec4f861
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureChangeParameters
+      Id: g=4b9e880c47c6a961e280e767185bf518
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ProcedureEquipmentControl
+      Id: g=809a0ebb1d81d140f0f01f2c34b990c1
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ConfigTrend
+      Id: g=7e7d89ba4dd9a3513107a4ca66181bda
+      Type: BaseDataVariableType
+      DataType: Boolean

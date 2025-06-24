@@ -1,0 +1,509 @@
+Name: PanelsAdvanced
+Type: FolderType
+Children:
+- Name: raP_5_20_PRT_AdvHMI
+  Id: g=6778cab25beca8fd62daa5f120baeee4
+  Supertype: raP_5_20_AdvHMIPanelBase
+  ReferenceType: HasComponent
+  Children:
+  - Name: Tag
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "{raSDK1_DialogBox}/Ref_Tag@NodeId"
+  - Name: ScrollView1
+    Type: ScrollView
+    Children:
+    - Name: VerticalLayout1
+      Type: ColumnLayout
+      Children:
+      - Name: adn_Identification
+        Type: raP_5_20_HMI_Identification
+        Children:
+        - Name: Header
+          Type: AccordionHeader
+          Children:
+          - Name: Label
+            Type: Label
+        - Name: Content
+          Type: AccordionContent
+          Children:
+          - Name: VerticalLayout1
+            Type: ColumnLayout
+            Children:
+            - Name: sd_AtDescription
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"LocaleId":"en-US","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Tag}/Description"
+            - Name: sd_AtLabel
+              Type: raP_5_20_SD_ExtTagProp
+              Children:
+              - Name: Label
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../Cfg_Label"
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  Value: -1.0
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../Set_LabelWidth"
+              - Name: Value
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../Inp_String"
+                - Name: Style
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Live Data"
+                  Children:
+                  - Name: ExpressionEvaluator1
+                    Type: ExpressionEvaluator
+                    Children:
+                    - Name: Source0
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../Cfg_DisplayAsPrimary"
+              - Name: Cfg_Label
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"LocaleId":"en-US","Text":"Label"}
+              - Name: Inp_String
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "String"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Tag}/Label"
+              - Name: Cfg_DisplayAsPrimary
+                Type: BaseDataVariableType
+                DataType: Boolean
+              - Name: Set_LabelWidth
+                Type: BaseDataVariableType
+                DataType: Int32
+                Value: 220
+            - Name: sd_AtTag
+              Type: raP_5_20_SD_ExtTagProp
+              Children:
+              - Name: Label
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../Cfg_Label"
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  Value: -1.0
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../Set_LabelWidth"
+              - Name: Value
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../Inp_String"
+                - Name: Style
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Live Data"
+                  Children:
+                  - Name: ExpressionEvaluator1
+                    Type: ExpressionEvaluator
+                    Children:
+                    - Name: Source0
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../Cfg_DisplayAsPrimary"
+              - Name: Cfg_Label
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"LocaleId":"en-US","Text":"Tag"}
+              - Name: Inp_String
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "String"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Tag}@BrowseName"
+              - Name: Cfg_DisplayAsPrimary
+                Type: BaseDataVariableType
+                DataType: Boolean
+              - Name: Set_LabelWidth
+                Type: BaseDataVariableType
+                DataType: Int32
+                Value: 220
+            - Name: sd_AtArea
+              Type: raP_5_20_SD_ExtTagProp
+              Children:
+              - Name: Label
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../Cfg_Label"
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  Value: -1.0
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../Set_LabelWidth"
+              - Name: Value
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../Inp_String"
+                - Name: Style
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Live Data"
+                  Children:
+                  - Name: ExpressionEvaluator1
+                    Type: ExpressionEvaluator
+                    Children:
+                    - Name: Source0
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../Cfg_DisplayAsPrimary"
+              - Name: Cfg_Label
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"LocaleId":"en-US","Text":"Area"}
+              - Name: Inp_String
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "String"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Tag}/Area"
+              - Name: Cfg_DisplayAsPrimary
+                Type: BaseDataVariableType
+                DataType: Boolean
+              - Name: Set_LabelWidth
+                Type: BaseDataVariableType
+                DataType: Int32
+                Value: 220
+        - Name: Expanded
+          Type: BaseDataVariableType
+          DataType: Boolean
+      - Name: adn_Navigation
+        Type: raSDK1_AccordionBaseConfig
+        Children:
+        - Name: Header
+          Type: AccordionHeader
+          Children:
+          - Name: Label
+            Type: Label
+        - Name: Content
+          Type: AccordionContent
+          Children:
+          - Name: VerticalLayout1
+            Type: ColumnLayout
+            Children:
+            - Name: lbl_EnableNavigation
+              Type: Label
+            - Name: grp_Cfg_HasMoreObj
+              Type: raP_5_20_HMI_NavConfig
+              Children:
+              - Name: cb_Cfg_HasNav
+                Type: CheckBox
+                Children:
+                - Name: Checked
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../Cfg_HasNav"
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../Set_Label"
+                - Name: Enabled
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../Set_Enabled"
+              - Name: Cfg_HasNav
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Tag}/Cfg_HasMoreObj"
+              - Name: Cfg_NavObject
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "@Navigation"
+                Children:
+                - Name: DynamicLink1
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Tag}/Cfg_HasMoreObj/Navigation"
+              - Name: Set_Label
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "An object with more information"
+              - Name: Visible
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: true
+              - Name: Set_Enabled
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../../Sec_DeviceConfigHMI"
+              - Name: sd_Cfg_NavObject
+                Type: Label
+                Children:
+                - Name: Visible
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../Cfg_HasNav"
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"LocaleId":"en-US","Text":""}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../Cfg_NavObject"
+        - Name: Expanded
+          Type: BaseDataVariableType
+          DataType: Boolean
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+    - Name: ContentWidth
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentHeight
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewWidth
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewHeight
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentX
+      Type: BaseDataVariableType
+      DataType: Size
+    - Name: ContentY
+      Type: BaseDataVariableType
+      DataType: Size
+    - Class: Reference
+      Target: ns=9;i=1394
+      Direction: Forward
+  - Name: Sec_AreaBasic
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Children:
+          - Name: DynamicLinkFormatter
+            Type: StringFormatter
+            Children:
+            - Name: Source3
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Tag}/Area"
+  - Name: Sec_AreaAdvanced
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Children:
+          - Name: DynamicLinkFormatter
+            Type: StringFormatter
+            Children:
+            - Name: Source3
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Tag}/Area"
+  - Name: Sec_DeviceConfigHMI
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/User/Permissions/DeviceConfigHMI"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/OptixPlantPAxWebinar/Security/UserTypes/AdvancedSecurity/DeviceConfigHMI"
+      - Name: Source2
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Sec_AreaAdvanced"
+      - Name: Source3
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Sec_AreaBasic"
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 279.0
+  - Name: Cfg_ObjectVersion
+    Type: BaseDataVariableType
+    DataType: String
+    Description: {"LocaleId":"en-US","Text":"Object version"}
+    Value: "5.20.02 Release"

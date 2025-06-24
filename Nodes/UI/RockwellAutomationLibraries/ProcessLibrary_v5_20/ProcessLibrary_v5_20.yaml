@@ -1,0 +1,25 @@
+Name: ProcessLibrary_v5_20
+Type: FolderType
+DisplayName: {"LocaleId":"en-US","Text":"Process Library v5.20"}
+Children:
+- File: GraphicSymbols/GraphicSymbols.yaml
+- File: raP_5_20_PAI_UI/raP_5_20_PAI_UI.yaml
+- File: raP_5_20_PAID_UI/raP_5_20_PAID_UI.yaml
+- File: raP_5_20_PAO_UI/raP_5_20_PAO_UI.yaml
+- File: raP_5_20_PCMDSRC_UI/raP_5_20_PCMDSRC_UI.yaml
+- File: raP_5_20_PD4SD_UI/raP_5_20_PD4SD_UI.yaml
+- File: raP_5_20_PDBC_UI/raP_5_20_PDBC_UI.yaml
+- File: raP_5_20_PDI_UI/raP_5_20_PDI_UI.yaml
+- File: raP_5_20_PDO_UI/raP_5_20_PDO_UI.yaml
+- File: raP_5_20_PDOSE_UI/raP_5_20_PDOSE_UI.yaml
+- File: raP_5_20_PHLS_UI/raP_5_20_PHLS_UI.yaml
+- File: raP_5_20_PINTLK_UI/raP_5_20_PINTLK_UI.yaml
+- File: raP_5_20_PMTR_UI/raP_5_20_PMTR_UI.yaml
+- File: raP_5_20_PPERM_UI/raP_5_20_PPERM_UI.yaml
+- File: raP_5_20_PPID_UI/raP_5_20_PPID_UI.yaml
+- File: raP_5_20_PRI_UI/raP_5_20_PRI_UI.yaml
+- File: raP_5_20_PRT_UI/raP_5_20_PRT_UI.yaml
+- File: raP_5_20_PVLV_UI/raP_5_20_PVLV_UI.yaml
+- File: raP_5_20_PVLVS_UI/raP_5_20_PVLVS_UI.yaml
+- File: raP_5_20_PVSD_UI/raP_5_20_PVSD_UI.yaml
+- File: _PrivateElements_/_PrivateElements_.yaml

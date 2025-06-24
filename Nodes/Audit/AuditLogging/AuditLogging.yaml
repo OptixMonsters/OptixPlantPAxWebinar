@@ -1,0 +1,295 @@
+Name: AuditLogging
+Type: FolderType
+Children:
+- Name: AuditLoggingDB
+  Id: g=e7499b5bd25e47982a25b8d515d9cc1a
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: AuditLogger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: EventType
+          Type: StoreColumn
+          DataType: String
+        - Name: LocalTime
+          Type: StoreColumn
+          DataType: ns=0;DateTime
+        - Name: ClientUserId
+          Type: StoreColumn
+          DataType: String
+        - Name: OldValue
+          Type: StoreColumn
+          DataType: String
+        - Name: NewValue
+          Type: StoreColumn
+          DataType: String
+        - Name: SourceNode
+          Type: StoreColumn
+          DataType: String
+  - Class: Reference
+    Target: ns=27;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=13;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=59
+    Direction: Forward
+- Name: AuditLogger
+  Type: EventLogger
+  Children:
+  - Name: Enabled
+    Type: PropertyType
+    DataType: Boolean
+    Value: true
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/OptixPlantPAxWebinar/Audit/AuditLogging/AuditLoggingDB"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: EventConfigurations
+    Type: BaseObjectType
+    Children:
+    - Name: EventConfiguration1
+      Type: EventConfiguration
+      Children:
+      - Name: EventType
+        Type: NodePointer
+        DataType: NodeId
+        ReferenceType: HasProperty
+        Value: "/Types/EventTypes/BaseEventType/AuditEventType/AuditUpdateEventType"
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType"
+      - Name: ExcludeNonInteractiveSessions
+        Type: PropertyType
+        DataType: Boolean
+        Value: true
+      - Name: EventSource
+        Type: NodePointer
+        DataType: NodeId
+        ReferenceType: HasProperty
+        Value: "/Objects/OptixPlantPAxWebinar/CommDrivers"
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType"
+  - Name: EventFieldPaths
+    Type: BaseObjectType
+    Children:
+    - Name: EventType
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:EventType"
+    - Name: SourceName
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:SourceName"
+    - Name: ActionTimeStamp
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:ActionTimeStamp"
+    - Name: ClientUserId
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:ClientUserId"
+    - Name: NewValue
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:NewValue"
+    - Name: OldValue
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:OldValue"
+    - Name: SourceNode
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:SourceNode"
+    - Name: LocalTime
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:LocalTime"
+    - Name: Time
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:Time"
+  - Name: EventArguments
+    Type: BaseObjectType
+    Children:
+    - Name: EventTypeId
+      Type: BaseDataVariableType
+      DataType: NodeId
+    - Name: EventType
+      Type: BaseDataVariableType
+      DataType: NodeId
+    - Name: SourceName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: ActionTimeStamp
+      Type: BaseDataVariableType
+      DataType: UtcTime
+    - Name: ClientUserId
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: NewValue
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+    - Name: OldValue
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+    - Name: SourceNode
+      Type: BaseDataVariableType
+      DataType: NodeId
+    - Name: LocalTime
+      Type: BaseDataVariableType
+      DataType: TimeZoneDataType
+    - Name: Time
+      Type: BaseDataVariableType
+      DataType: UtcTime
+  - Name: EventFieldsToLog
+    Type: BaseObjectType
+    Children:
+    - Name: EventType
+      Type: EventFieldToLog
+      DataType: String
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/EventType@BrowseName"
+    - Name: LocalTime
+      Type: EventFieldToLog
+      DataType: ns=0;DateTime
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}+{1}"
+        - Name: ns=7;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../EventArguments/Time"
+        - Name: ns=7;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../EventArguments/LocalTime"
+    - Name: ClientUserId
+      Type: EventFieldToLog
+      DataType: String
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/ClientUserId"
+    - Name: OldValue
+      Type: EventFieldToLog
+      DataType: String
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/OldValue"
+    - Name: NewValue
+      Type: EventFieldToLog
+      DataType: String
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/NewValue"
+    - Name: SourceNode
+      Type: EventFieldToLog
+      DataType: String
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/SourceNode@BrowsePath"
